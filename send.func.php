@@ -48,8 +48,9 @@ function send_sms($data, $smsc){
     curl_close($curl); #Завершаем сеанс cURL
 
     $response=array(
+        'http_code' => $code,
         'response'  => (array)json_decode($out),
-        'http_code' => $code
+        'raw'       => $out
     );
 
     /*
