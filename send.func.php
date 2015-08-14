@@ -17,7 +17,7 @@ function send_sms($data, $smsc){
         unset($data['phone']);
     }
     $defdata=array(
-        'sender'    =>  'SYNERGY',
+        'sender'    =>  '',
         'phones'    =>  '',
         'mes'       =>  '',
         'fmt'       =>  3
