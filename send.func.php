@@ -35,7 +35,7 @@ function send_sms($data, $smsc){
     $curl=curl_init(); #Сохраняем дескриптор сеанса cURL
     #Устанавливаем необходимые опции для сеанса cURL
     curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
-    curl_setopt($curl,CURLOPT_USERAGENT,'sbs.edu.ru-ershov.pw-bot');
+    curl_setopt($curl,CURLOPT_USERAGENT,'effetto.pro-smsc.ru-bot');
     curl_setopt($curl,CURLOPT_URL,$link);
     curl_setopt($curl,CURLOPT_CUSTOMREQUEST,'POST');
     curl_setopt($curl,CURLOPT_POSTFIELDS,$data);
